@@ -46,7 +46,7 @@ const palette = {
   infoDark: '#38BDF8',
   infoBgLight: '#E0F2FE',
   infoBgDark: '#0C4A6E',
-} as const;
+};
 
 export const lightColors = {
   primary: palette.violet600,
@@ -98,7 +98,9 @@ export const lightColors = {
   shimmer: palette.gray200,
 };
 
-export const darkColors = {
+export type ColorTokens = typeof lightColors;
+
+export const darkColors: ColorTokens = {
   primary: palette.violet500,
   primaryLight: palette.obsidian700,
   primaryDark: palette.violet300,
